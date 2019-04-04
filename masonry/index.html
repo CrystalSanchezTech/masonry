@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .grid-item { width: 200px; }
+        .grid-item--width2 { width: 400px; }
+        img {
+            max-width: 100%;
+            min-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="grid-item"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/2010-brown-bear.jpg/200px-2010-brown-bear.jpg"></div>
+        <div class="grid-item grid-item--width2"><img src="http://www.nhm.ac.uk/resources/visit/wpy/2017/small/11.jpg"></div>
+        <div class="grid-item"><img src="https://cdn.images.express.co.uk/img/dynamic/78/590x/1006307_1.jpg?r=1534855004478"></div>
+        <div class="grid-item"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/2010-brown-bear.jpg/200px-2010-brown-bear.jpg"></div>
+        <div class="grid-item grid-item--width2"><img src="http://www.nhm.ac.uk/resources/visit/wpy/2017/small/11.jpg"></div>
+        <div class="grid-item"><img src="https://cdn.images.express.co.uk/img/dynamic/78/590x/1006307_1.jpg?r=1534855004478"></div>
+        <div class="grid-item"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/2010-brown-bear.jpg/200px-2010-brown-bear.jpg"></div>
+        <div class="grid-item grid-item--width2"><img src="http://www.nhm.ac.uk/resources/visit/wpy/2017/small/11.jpg"></div>
+        <div class="grid-item"><img src="https://cdn.images.express.co.uk/img/dynamic/78/590x/1006307_1.jpg?r=1534855004478"></div>
+        <div class="grid-item"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/2010-brown-bear.jpg/200px-2010-brown-bear.jpg"></div>
+        <div class="grid-item grid-item--width2"><img src="http://www.nhm.ac.uk/resources/visit/wpy/2017/small/11.jpg"></div>
+        <div class="grid-item"><img src="https://cdn.images.express.co.uk/img/dynamic/78/590x/1006307_1.jpg?r=1534855004478"></div>
+    </div>
+
+<script
+src="https://code.jquery.com/jquery-3.3.1.min.js"
+integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+crossorigin="anonymous"></script> 
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script> 
+<script>
+    $('.grid').masonry({
+    // options
+        itemSelector: '.grid-item',
+        columnWidth: 300
+    });
+</script>
+
+</body>
+</html>
